@@ -1,0 +1,99 @@
+/* .poster, .title{
+    border: 1px solid rgb(247, 168, 0);
+} */
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+#cards{
+   width: 1000px;
+   height: 800px;
+   /* border: 1px solid magenta; */
+   margin: 50px auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+   
+}
+
+.card{
+    width: 300px;
+    height: 675px;
+    border: 1px solid rgb(247, 168, 0);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.poster{
+    width: 280px;
+    height: 420px;
+    margin-top: 10px;
+}
+
+.title{
+    height: 75px;
+    width: 280px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    font-size: 30px;
+    line-height: 0.9;
+    font-weight: 600;
+    color: #616161;
+}
+
+.price{
+    height: 45px;
+    width: 280px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price>div:nth-child(1) {
+    font-size: 30px;
+    color: rgb(36, 35, 35);
+    line-height: 0.9;
+
+  }
+
+  .price>div:nth-child(2) {
+        font-size: 19px;
+        color: rgb(134, 130, 130);
+        text-decoration: line-through;
+        line-height: 1.421;
+  }
+
+  .ranting{
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .material-icons{
+    color:rgb(250, 183, 0);
+    font-size: 1.8em;
+  }
+
+  .button{
+    height: 75px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .poster img:nth-child(2){
+    transform: translate(10%, -140%);
+  }
+
+  .poster img:nth-child(3){
+    transform: translate(-20%, -440%);
+  }
