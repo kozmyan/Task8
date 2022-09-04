@@ -92,8 +92,21 @@ body{
 
   .poster img:nth-child(2){
     transform: translate(10%, -140%);
+    
   }
 
   .poster img:nth-child(3){
-    transform: translate(-20%, -440%);
+    transform: translate(-10%, -440%);
+    
   }
+
+
+ .form{
+    position: fixed;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 2px solid #616161;
+    padding: 3%;
+  }
+
+  

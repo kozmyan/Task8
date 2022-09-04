@@ -5,13 +5,27 @@ myCard = {
   sale: "sale.png",
   title1: "Тайная жизнь",
   title2: "домашних животных 2",
-  price: 50,
+  price: 55,
   sale_percent: 10,
   currency: "руб.",
-  rating: 3,
+  rating: 0.5,
   button: "button.png",
-  promotion: false,
+  promotion: ""
 };
+
+
+function create() {
+    myCard.title1 = form1.title1_1.value;
+    myCard.title2 = form1.title1_2.value;
+    myCard.promotion = form1.promotion1.value;
+    myCard.price = form1.price1.value;
+    myCard.sale_percent = form1.sale_percent1.value;
+    myCard.rating = form1.rating1.value;
+    updateCard();  
+}
+
+
+function updateCard() {
 
 let fullPrice = `${myCard.price},00 ${myCard.currency}`;
 
@@ -40,7 +54,7 @@ for(i=1; i<=(maxRank-myCard.rating); i++)
 
 // Проверка на наличие товара на акции
 
-if (myCard.promotion === true) 
+if (myCard.promotion == "товар на акции") 
     myCard.sale = "sale.png";
 else {
     myCard.sale = "";
@@ -84,3 +98,5 @@ let s = `
 `;
 
 cards.innerHTML = s;
+}
+

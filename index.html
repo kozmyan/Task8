@@ -15,6 +15,44 @@
 
 <body>
 
+    <form name="form1" class="form">
+        <label>Наименование товара</label>
+        <input type = "text" name="title1_1" value="Тайная жизнь">
+        <br/>
+        <label>Наименование товара 2</label>
+        <input type = "text" name="title1_2" value="домашних животных 2">
+        <br/>
+
+        <label>Акция на товар</label>
+        <select name="promotion1">
+            <option>товар на акции</option>
+            <option>акции нет</option>
+        </select>
+         <br/>
+        <label>Стоимость товара</label>
+        <input type = "text" size="3" name="price1" value="50">
+        <br/>
+        <label>Размер скидки</label>
+        <input type = "text" size="3" name="sale_percent1" value="10">
+        <br/>
+        <label>Pейтинг товара</label>
+        <select name="rating1">
+            <option>0.5</option>
+            <option>1</option>
+            <option>1.5</option>
+            <option>2</option>
+            <option>2.5</option>
+            <option>3</option>
+            <option>3.5</option>
+            <option>4</option>
+            <option>4.5</option>
+            <option>5</option>
+        </select>
+        <br/>
+        <input type="button" value="Сформировать" onclick="create()">
+
+    </form>
+
 <div id ="cards">
 <!-- <div class="card">
     <div class="poster">
