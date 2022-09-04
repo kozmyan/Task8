@@ -21,11 +21,7 @@ function create() {
     myCard.price = form1.price1.value;
     myCard.sale_percent = form1.sale_percent1.value;
     myCard.rating = form1.rating1.value;
-    updateCard();  
-}
-
-
-function updateCard() {
+    
 
 let fullPrice = `${myCard.price},00 ${myCard.currency}`;
 
